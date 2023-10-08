@@ -56,3 +56,7 @@ def mark_completed(request, task_id):
     query.save()
 
     return render(request, 'partials/singletask.html', context={'task': query})
+
+'''
+Django + DTL + HTMX
+'''
