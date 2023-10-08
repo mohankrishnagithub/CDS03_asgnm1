@@ -60,3 +60,5 @@ def mark_completed(request, task_id):
 '''
 Django + DTL + HTMX
 '''
+
+# This new line is added online from giuthub
