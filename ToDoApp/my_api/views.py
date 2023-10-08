@@ -69,5 +69,5 @@ Django + DTL + HTMX
 
 # This line is added online at GITHUB on BRANCH react
 # This line is added from LocalRepo on branch React
-
+# This is the last line
 
