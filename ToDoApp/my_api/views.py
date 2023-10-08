@@ -62,3 +62,4 @@ Django + DTL + HTMX
 '''
 
 # This new line is added online from giuthub
+# This is a new line added from local repo
