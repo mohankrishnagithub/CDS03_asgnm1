@@ -1,0 +1,18 @@
+body {background-color: dodgerblue;}
+
+.main_container {
+  width: 500px;
+  margin: auto;
+  background-color: #fff;
+  height: auto;
+  border-radius: 5px;
+}
+
+.user_input input[type=text] {width: 75%; padding: 10px; font-size: 20px;}
+.user_input button {padding: 12px; margin: 0;}
+
+.lists {display: flex; margin: 2px; flex-direction: column;}
+.task { padding: 5px; text-align: left;
+       margin-bottom: 7px; border: 2px solid grey; border-radius: 5px;}
+
+.True {text-decoration: line-through; margin-right: 5px; color: darkred;}

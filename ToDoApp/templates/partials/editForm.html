@@ -1,0 +1,7 @@
+<form>
+  <input type="text" name="title" value="{{ task.Title }}">
+  <input type="hidden" name="perform_update" value="{{ task.id }}" >
+
+  <button hx-post="{% url 'update' task.id %}" hx-trigger="click" hx-swap="none">UPDATE</button>
+
+</form>

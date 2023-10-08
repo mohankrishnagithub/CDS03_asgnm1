@@ -1,0 +1,22 @@
+<div class="task task{{ task.id }}" id="kk{{ task.id }}">
+  <strong class="{{ task.Completed }}">{{ task.Title }}</strong>
+
+    <div class="btns">
+      <button hx-post="{% url 'update' task.id %}" hx-trigger="click"
+              hx-swap="innerHTML" hx-target="#input_form"
+              >EDIT</button>
+
+      <button hx-post="{% url 'delete' task.id %}" hx-trigger="click"
+              hx-swap="delete" hx-target=".task{{ task.id }}"
+              >DELETE</button>
+
+      <button hx-post="{% url 'completed' task.id %}" hx-trigger="click"
+              hx-swap="outerHTML" hx-target=".task{{ task.id }}"
+              >DONE</button>
+
+    </div>
+
+
+</div>
+
+<!--    -->

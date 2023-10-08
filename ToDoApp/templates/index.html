@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TODOapp</title>
+    <link rel="stylesheet" href="{% static 'master.css' %}">
+    <script src="https://unpkg.com/htmx.org@1.9.6"></script>
+</head>
+<body>
+
+<div class="main_container">
+  <div class="user_input" id="input_form">
+    <form>
+      {% csrf_token %}
+      <input type="text" name="title" value="">
+      <button hx-post="{% url 'create' %}" hx-trigger="click" hx-swap="afterbegin" hx-target=".lists">SUBMIT</button>
+    </form>
+  </div>
+
+  <div class="lists" >
+
+    {% for task in tasks %}
+      {% include 'partials/singletask.html' %}
+    {% endfor %}
+
+  </div>
+
+</div>
+
+
+
+
+</body>
+</html>
